@@ -9,4 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   for (const type of ['chrome', 'node', 'electron']) {
     replaceText(`${type}-version`, process.versions[type])
   }
+
+  document.getElementById('River-Say').innerHTML = '<pre>'+JSON.stringify(process,null,4)+'</pre>';
+
 })
